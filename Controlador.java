@@ -47,7 +47,7 @@ class Main {
     }
     //Es el que trabaja segun lo que deseo el usuario
     int elegido =menuOpciones();
-    DiseñoFactory eligir = new DiseñoFactory();
+    DesignFactory eligir = new DesignFactory();
     System.out.println("---------------------");
     Menu<String> operando = eligir.opcionMenu(elegido);
     Menu<Float> datos = eligir.opcionMenu(elegido);
@@ -222,5 +222,7 @@ class Main {
             }while(ciclo_numero);
 
     return opcionNumero;
+
+
   }
 }
